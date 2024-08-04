@@ -1,0 +1,312 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Set a base font family */
+}
+
+.navbar {
+  background-color:rgba(102, 102, 102, 0.95);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+  
+}
+
+.xyz {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  overflow: hidden;
+  pointer-events: auto; /* Add this */
+  z-index: 1000;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  z-index:  1;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to viewport height */
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+      font-family : Open Sans, sans-serif;
+}
+.hero-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.about{
+  padding: 50px 0;
+   background-color: #f7f7f7;
+}
+.services{
+  padding: 50px 0;
+   background-color: #fff;
+}
+.service-grid{
+  display: flex;
+   grid-template-columns: Repeat(3, 1fr);
+    gap: 20px;
+    
+          
+          
+}
+.service{
+  background-color: #f7f7f7;
+  padding: 20px;
+   border-radius: 10px;
+}
+.contact{
+   padding: 50px 0;
+    background-color: #db7134;
+}
+.contact-info{
+display: flex;
+ flex-direction: column;
+  align-items: center;
+}
+
+.footer{
+   padding: 20px 0;
+   background-color: #333;
+    color: #fff;
+
+}
+
+.product1{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#product2{
+ font-size: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding:20px;
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 150vh;
+  background-image: url('https://abieprima.com/file/media/source/Product-cover-valve.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  opacity: 0.2; /* apply opacity to the image only */
+
+}
+.abc{
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+}
+
+.product-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin:0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn{
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin:0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.product-grid.animate {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 60%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh;
+  background-image: url('https://amarineblog.files.wordpress.com/2017/09/ball-1.png?w=720');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  opacity: 0.2; /* apply opacity to the image only */
+
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to viewport height */
+  overflow-x: hidden;
+  font-family : Open Sans, sans-serif;
+}
+
+.about-overlay{
+  display: flex;
+   justify-content: center;
+    align-items: center;
+     height: 100vh;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.about-content {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  
+}
+
+.hero-content {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.product-table{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+}
+.product-table td,.product-table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.product-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+.product-table td {
+  border-right: 1px solid #ddd;
+}
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.product-table2{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.product-table2 th,.product-table2 td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table2 th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.product-table2 td {
+  border-right: 1px solid #ddd;
+}
+
+.product-table2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
