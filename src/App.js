@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import About from "./Pages/About";
 import Contacts from "./Pages/Contacts";
 import BallvalvePage from "./Pages/BallValve";
-import CheckvalvePage from "./Pages/CheckValve";
+import CheckvalvePage from "./Pages/Checkvalve";
 import ButterflyvalvePage from "./Pages/ButterflyValve";
 
 function App() {
@@ -21,7 +21,7 @@ return (
       <Route path="/About" element={<About />}/>
       <Route path="/Contacts" element={<Contacts />}/>
       <Route path="/BallValve" Component={BallvalvePage}/>
-      <Route path="/CheckValve" Component={CheckvalvePage}/>
+      <Route path="/Checkvalve" Component={CheckvalvePage}/>
       <Route path="/ButterflyValve" Component={ButterflyvalvePage}/>
     </Routes>
    
